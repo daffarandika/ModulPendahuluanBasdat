@@ -1,0 +1,7 @@
+USE 5053251017_bandara_db;
+
+UPDATE Penumpang
+SET
+	No_Telpon = '081223344556'
+WHERE
+	NIK = '3302134567890123';

@@ -1,0 +1,4 @@
+USE 5053251017_bandara_db;
+
+ALTER TABLE Bagasi
+	MODIFY Jenis VARCHAR(50);
