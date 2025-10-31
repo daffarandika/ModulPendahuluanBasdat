@@ -1,0 +1,4 @@
+USE 5053251017_bandara_db;
+
+ALTER TABLE Penumpang
+	ADD Email VARCHAR(255);

@@ -1,6 +1,13 @@
 USE 5053251017_bandara_db;
+
+ALTER TABLE Bandara_Penerbangan
+	DROP FOREIGN KEY Bandara_Penerbangan_ibfk_1;
+
 ALTER TABLE Bandara
 	DROP PRIMARY KEY;
 
 ALTER TABLE Bandara
-	ADD PRIMARY KEY (ID, Kode_IATA);
+	ADD CONSTRAINT PRIMARY KEY (ID, Kode_IATA);
+
+ALTER TABLE Bandara_Penerbangan
+	ADD CONSTRAINT FOREIGN KEY (Bandara_ID) REFERENCES Bandara (ID);
